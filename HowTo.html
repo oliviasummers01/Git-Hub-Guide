@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Git Fundamentals</title>
+</head>
+<body>  <header>
+    <h1>Git Fundamentals</h1>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="HowTo.html">Getting Started</a></li>
+          <li><a href="basics.html">Basics</a></li>
+          <li><a href="Resources.html">Resources</a></li>
+        </ul>
+      </nav>
+</header>
+        <img class="headerimg" src="img/headerimg.png" alt="">
+<link rel="stylesheet" href="">
+
+  <div class="container main-content">
+
+    <div class="step">
+      <h2>Step 1: Setting Up the Environment</h2>
+      <h3>Install Git and VS Code.</h3>
+      <p>To begin, you must install Git and VS Code. I recommend downloading VS code first as it is much simpler. 
+        To install vs code, simply follow the <a href="https://code.visualstudio.com/docs/setup/mac"> VS Code Download Link</a> and follow the instructions depending on your computer typer. VS code downloads and acts as a normal webapp.
+        Then, to install Git on Mac, first, open the terminal app that can be found in your launchpad. Install Git with the command "xcode-select --install". You will then be prompted to accept the installation and agree to the terms.
+        The download will then take a few minutes to complete. Once the downloading pop up disappears, you can verify that Git has been downloaded by running the command "git" in your terminal which will populate. If it does not populate, restart with the first command.
+    </p>
+      <h3>Configure Git within VS Code (user name, email).</h3>
+      <p>
+        To then use Git within VS Code, you must attach Git to the VS Code webapp. To do this, open VS Code, select View and then Terminal. Once the terminal pannel has open in the bottom half of the VS Code screen, tyle the commands "git config --global user.name "First Last""
+         and "git config --global user.email name@domain.com". To check to see what has been set in the Git Config File, run the command "git config --global --list".
+       
+      </p>
+    </div>
+
+
+    <div class="step">
+      <h2>Step 2: Creating and Cloning a GitHub Repository</h2>
+      <h3>Create a new repository on GitHub.</h3>
+      <p> 
+        To create your own repository, you must create an account to log into <a href="https://github.com"> Git Hub</a>. Then, scroll down to the start writing code section. Here you find the option to start a new repository. Simply input a name for your repository, choose whether you'd like it to be public or private (this can be changed later) and select the  "create a new repository" button.
+         </p>
+      <h3>Clone the repository using VS Code's integrated Git support.</h3>
+      <p>Once your repository is created, select to copy the link as an HTTPS in the blue quick set up section. Now, in VS Code 
+        and open the Command Palette (COMMAND + SHIFT + P). Type the command "> Git: Clone", at this point it will prompt you 
+        to enter a repository link. Paste this link to your repository in the command palette. It will then prompt you to create
+         or choose a file to select as the repository destination. Once you've chosen the  destination, select the blue button confirming this as your  repository destination. It will then ask if you'd like to open the cloned repository, which I would normally do. </p>
+    </div>
+
+    <div class="step">
+        <h2>What Next?</h2>
+        <h3>To begin using Git within VS code, move to <a href="basics.html"> Basics</a> in this Webpage</h3>
+        </div>
+
+  <footer>
+    <p>&copy; 2024 Olivia Summers. Front End Development III.</p>
+  </footer>
+</body>
+</html>
